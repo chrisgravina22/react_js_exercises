@@ -1,0 +1,26 @@
+browser->server: HTTP POST new_note_spa
+
+note over browser:
+new note is posted as JSON 
+data containing both the 
+content of the note and timestamp
+server is thus updated with that information
+end note
+
+note over server:
+Server will then update it's info
+and send back code 201, 
+meaning information received and stored
+end note
+server-->browser: code status 201 
+
+note over browser:
+browser executes the event handler
+that handles the submit event
+end note
+
+note over browser:
+handling code creates a new 
+element in the HTML page and 
+appends that element to the list
+end note
